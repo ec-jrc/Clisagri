@@ -32,7 +32,6 @@
 ### no DVS: SPEI for period between November and June
 ### DVS present: SPEI for period between sowing (BBCH=0) and full maturity (BBCH=89)
 
-
 ##########
 ########## heavy/excessive rainfall indicators ##############
 # type=7 - rainfall during pre-sowing period (September and October)
@@ -58,17 +57,12 @@
 ### no DVS: maximum number of consecutive days with rain above 5 mm between May and June
 ### DVS present: maximum number of consecutive days with rain above 5 mm between end of flowerign and full maturity (DVS=69 - 89)
 
-
-
-
-
 #######
 ########## cold stress indicators ##############
 ########## Number of days with minimum daily temperature below 2 deg. C between booting (BBCH=41) and end of flowering (BBCH=69)
 # type=14 - Number of days with minimum daily temperature below 2 deg. C between booting and flowering
 ### no DVS: number of days with minimum daily temperature below 2 deg. C between April and May
 ### DVS present: number of days with minimum daily temperature below 2 deg. C between booting (BBCH=41) and end of flowering (BBCH=69)
-
 
 #######
 ########## heat stress indicators ##############
