@@ -13,11 +13,11 @@
 #
 
 #*********************************************************
-#             RAGROCLIM
+#             Clisagri
 #*********************************************************
 
 #*********************************************************
-# Climate calculation ???
+# 
 #
 # Parameters :
 #  - meteo        [INPUT] 	- daily meteorological data
@@ -33,12 +33,12 @@
 #                     cumulate of reference evapotranspiration in relevant period
 #                     value of indicator
 #*********************************************************
-agro.clim = function(meteo, lat, types=c(1:16), sowing=NULL,  drought.coef=NULL)
+clisagri = function(meteo, lat, types=c(1:16), sowing=NULL,  drought.coef=NULL)
 {
   require(lubridate)
   
   if(!is.null(drought.coef))
-    load(drought.coef, envir=environment(agro.clim))
+    load(drought.coef, envir=environment(clisagri))
 
   if(!is.null(meteo$DVS) && is.null(sowing))
     return("SOWING DATE needs to be present if calculation is based on DVS")
