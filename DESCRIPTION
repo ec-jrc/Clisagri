@@ -1,4 +1,4 @@
-Package: RAgroClim
+Package: Clisagri
 Version: 0.1-1 
 Date: 2019-08-01 
 Title: Agroclimatic indicators for assessment of (un)favourable weather conditions during crop growing season. 
@@ -13,7 +13,10 @@ Author: Andrej Ceglar [aut, cre],
 Maintainer: Andrej Ceglar <andrej.ceglar@ec.europa.eu> 
 Depends: R (>= 3.1.0) 
 Suggests:  
-Description: R package provides a set of functions to calculate agroclimatic indicators related to hydrological balance, excessive wetness and temeprature extremes that are relevant for winter wheat production. Functionality is extended by providing a probabilistic assessment of single and compound climate extremes to aid decission making process for variety selection. Functions can be used with seasonal forecasts to support planning the field operations and variety selection.
+Description: R package provides a set of functions to calculate agroclimatic indicators related to hydrological balance, 
+excessive wetness and temeprature extremes that are relevant for winter wheat production. Functionality is extended by 
+providing a probabilistic assessment of single and compound climate extremes to aid decission making process for variety 
+selection. Functions can be used with seasonal forecasts to support planning the field operations and variety selection.
  
 License: GPL (>= 2) 
 URL: https://www.r-project.org
