@@ -1,0 +1,80 @@
+#######
+########## hydrological balance ##############
+########## 1 - hydrological balance during pre-sowing peridod (September and October)
+########## 2 - hydrological balance around sowing (i.e. from sowing (DVS=0) until emergence (DVS=0.01))
+########## 3 - hydrological balance during tillering (from DVS=0.1 to DVS=0.33)
+########## 4 - hydrological balance between stem elongation period (DVS=0.34) and heading (DVS=0.89)
+########## 5 - hydrological balance between stem flowering period (DVS=0.90) and maturity (DVS=2)
+########## 6 - hydrological balance between sowing (DVS=0) and maturity (DVS=2)
+
+# type=1
+### hydrological balance during pre-sowing period (September and October)
+### no DVS: SPEI for period between September - October
+### DVS present: SPEI for period September - October
+# type=2
+### hydrological balance between sowing (i.e. from germination (BBCH=0) and emergence (BBCH=9))
+### no DVS: SPEI for period between October and November
+### DVS present: SPEI for period between BBCH 0 (sowing) and BBCH 9 (emergence)
+# type=3
+### hydrological balance during tillering (from BBCH=20 to BBCH=29)
+### no DVS: SPEI for period between December and March
+### DVS present: SPEI for period between no tillers (BBCH=20) and end of tillering (BBCH=29)
+# type=4
+### 4 - hydrological balance between beginning of stem elongation period (BBCH=30) and end of booting (BBCH=49)
+### no DVS: SPEI for period between April and May
+### DVS present: SPEI for period between beginning of stem elongation period (BBCH=30) and end of booting (BBCH=49)
+# type=5
+### 5 - hydrological balance between beginning of heading period (BBCH=50) and full maturity (BBCH=89)
+### no DVS: SPEI for period between May and June
+### DVS present: SPEI for period between beginning of heading period (BBCH=50) and full maturity (BBCH=89)
+# type=6
+### 6 - hydrological balance between sowing (BBCH=0) and full maturity (BBCH=89)
+### no DVS: SPEI for period between November and June
+### DVS present: SPEI for period between sowing (BBCH=0) and full maturity (BBCH=89)
+
+
+##########
+########## heavy/excessive rainfall indicators ##############
+# type=7 - rainfall during pre-sowing period (September and October)
+### rainfall cumulate before sowing
+### no DVS: rainfall cumulate for period between September and October
+### DVS present: rainfall cumulate for period between September and October
+# type=8 - number of days with rain above 10 mm during tillering period
+### no DVS: number of days with rain above 10 mm between December and March
+### DVS present: rnumber of days with rain above 10 mm during tillering (BBCH=20 - 29)
+# type=9 - number of days with rain above 40 mm during tillering
+### no DVS: number of days with rain above 40 mm between December and March
+### DVS present: number of days with rain above 40 mm during tillering (BBCH=20 - 29)
+# type=10 - number of days with rain above 5 mm between beginning of heading and full maturity
+### no DVS: number of days with rain above 5 mm between April and June
+### DVS present: number of days with rain above 5 mm between beginning of heading and full maturity (BBCH=51 - 89)
+# type=11 - number of days with rain above 40 mm between beginning of heading and full maturity
+### no DVS: number of days with rain above 40 mm between April and June
+### DVS present: number of days with rain above 40 mm between beginning of heading and full maturity (BBCH=51 - 89)
+# type=12 - maximum number of consecutive days with rain above 5 mm between beginning of heading and end of enf of flowering
+### no DVS: maximum number of consecutive days with rain above 5 mm between April and May
+### DVS present: maximum number of consecutive days with rain above 5 mm between beginning of heading and end of flowering (BBCH=51 - 69)
+# type=13 - maximum number of consecutive days with rain above 5 mm between end of flowering and full maturity
+### no DVS: maximum number of consecutive days with rain above 5 mm between May and June
+### DVS present: maximum number of consecutive days with rain above 5 mm between end of flowerign and full maturity (DVS=69 - 89)
+
+
+
+
+
+#######
+########## cold stress indicators ##############
+########## Number of days with minimum daily temperature below 2 deg. C between booting (BBCH=41) and end of flowering (BBCH=69)
+# type=14 - Number of days with minimum daily temperature below 2 deg. C between booting and flowering
+### no DVS: number of days with minimum daily temperature below 2 deg. C between April and May
+### DVS present: number of days with minimum daily temperature below 2 deg. C between booting (BBCH=41) and end of flowering (BBCH=69)
+
+
+#######
+########## heat stress indicators ##############
+## type 15 - Number of hot days with maximum daily temperature above 28 deg. C between end of stem elongation  and end of flowering
+## no DVS: Number of hot days with maximum daily temperature above 28 deg. C between March and May
+## DVS present: Number of hot days with maximum daily temperature above 28 deg. C between end of stem elongation (BBCH=39) and end of flowering (BBCH=69)
+## type 16 - Number of hot days with maximum daily temperature above 28 deg. C between during grain filling period
+## no DVS: Number of hot days with maximum daily temperature above 28 deg. C between May and June
+## DVS present: Number of hot days with maximum daily temperature above 28 deg. C during grain filling period (BBCH=69 - 89)

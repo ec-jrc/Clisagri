@@ -1,0 +1,20 @@
+Package: RAgroClim
+Version: 0.1-1 
+Date: 2019-08-01 
+Title: Agroclimatic indicators for assessment of (un)favourable weather conditions during crop growing season. 
+Authors@R: c(person("Andrej", "Ceglar", role = c("aut", "cre"), email = "andrej.ceglar@ec.europa.eu"), 
+             person("Marian", "Bratu", role = c("cre"), email = "marian.bratu@ext.ec.europa.eu")
+			 person("Andrea", "Toreti", role = c("aut"), email = "andrea.toreti@ec.europa.eu"),
+			 person("Matteo", "Zampieri", role = c("aut"), email = "matteo.zampieri@ec.europa.eu"),
+Author: Andrej Ceglar [aut, cre], 
+        Marian Bratu [cre], 
+	Andrea Toreti [aut],
+        Matteo Zampieri [aut]		
+Maintainer: Andrej Ceglar <andrej.ceglar@ec.europa.eu> 
+Depends: R (>= 3.1.0) 
+Suggests:  
+Description: R package provides a set of functions to calculate agroclimatic indicators related to hydrological balance, excessive wetness and temeprature extremes that are relevant for winter wheat production. Functionality is extended by providing a probabilistic assessment of single and compound climate extremes to aid decission making process for variety selection. Functions can be used with seasonal forecasts to support planning the field operations and variety selection.
+ 
+License: GPL (>= 2) 
+URL: https://www.r-project.org
+BugReports: https://pkgname.bugtracker.url

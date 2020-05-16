@@ -1,0 +1,23 @@
+PARAMETER_CODE;PARAMETER_XVALUE;PARAMETER_YVALUE;DESCRIPTION
+DTSMTB_01;0;0;Daily increase of temperature sum (PARAMETER_YVALUE) as a function of average daily temperature (PARAMETER_XVALUE)
+DTSMTB_02;30;30;Daily increase of temperature sum (PARAMETER_YVALUE) as a function of average daily temperature (PARAMETER_XVALUE)
+DTSMTB_03;45;30;Daily increase of temperature sum (PARAMETER_YVALUE) as a function of average daily temperature (PARAMETER_XVALUE)
+DVSEND;2;NA;Development stage at harvest
+DVSI;0;NA;Initial development stage
+IDSL;2;NA;pre-anthesis development depends on temperature (=0), photoperiod (=1) or photoperiod and vernalization (=2)
+TBASEM;0;NA;lower threshold temeprature for emergence (deg. C)
+VERNDVS;0.3;NA;maximum development stage for vernalization
+VERNRTB_01;-8;0;Effective vernalization rate (PARAMETER_YVALUE) as a function of average daily temeprature (PARAMETER_XVALUE)
+VERNRTB_02;-4;0;Effective vernalization rate (PARAMETER_YVALUE) as a function of average daily temeprature (PARAMETER_XVALUE)
+VERNRTB_03;3;1;Effective vernalization rate (PARAMETER_YVALUE) as a function of average daily temeprature (PARAMETER_XVALUE)
+VERNRTB_04;10;1;Effective vernalization rate (PARAMETER_YVALUE) as a function of average daily temeprature (PARAMETER_XVALUE)
+VERNRTB_05;17;0;Effective vernalization rate (PARAMETER_YVALUE) as a function of average daily temeprature (PARAMETER_XVALUE)
+VERNRTB_06;20;0;Effective vernalization rate (PARAMETER_YVALUE) as a function of average daily temeprature (PARAMETER_XVALUE)
+TEFFMX;30;NA;maximum effective temperature for emergence (°C)
+TSUMEM;110;NA;temperature sum from sowing to emergence (growing degree days)
+DLC;8;NA;critical daylength (lower threshold, hr)
+DLO;15.3;NA;optimum daylength for development (hr)
+TSUM1;810;NA;temperature sum from emergence to anthesis (growing degree days)
+TSUM2;873;NA;temperature sum from anthesis to maturity (growing degree days)
+VERNBASE;7;NA;base accumulated vernalized days (generally one fifth of VERNSAT)
+VERNSAT;37;NA;saturated vernalization requirements
