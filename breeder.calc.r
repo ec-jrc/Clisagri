@@ -7,7 +7,7 @@ breeder.calc = function(x, meteo, sowing, parameters, types, latitude, year=NA, 
   meteo = phenology.breeder(meteo, parameters, sowing$DAY, latitude)
   meteo$DVS = DVS2BBCH(meteo$DVS, dvs.end=6)
   
-  loc.dvs = agro.clim(meteo = meteo, types = types, lat = latitude, sowing=sowing$DAY)
+  loc.dvs = clisagri(meteo = meteo, types = types, lat = latitude, sowing=sowing$DAY)
   loc.dvs$flower = rep(stage(meteo,65), each=length(types))
   loc.dvs$maturity = rep(stage(meteo,89), each=length(types))
   
@@ -59,7 +59,7 @@ breeder.plot = function(data, year, types, parameters, x, sowing, latitude)
   meteo$DVS.r = DVS2BBCH(meteo$DVS, dvs.end=6)
   
   meteo$DVS = meteo$DVS.r
-  loc.dvs.r = agro.clim(meteo = meteo, types = types, lat = latitude, sowing=sowing$DAY)
+  loc.dvs.r = clisagri(meteo = meteo, types = types, lat = latitude, sowing=sowing$DAY)
   
   # optimal solution
   parameters$PARAMETER_YVALUE[which_] = colMeans(data@solution)
@@ -67,7 +67,7 @@ breeder.plot = function(data, year, types, parameters, x, sowing, latitude)
   meteo$DVS.opt = DVS2BBCH(meteo$DVS, dvs.end=6)
   
   meteo$DVS = meteo$DVS.opt
-  loc.dvs.opt = agro.clim(meteo = meteo, types = types, lat = latitude, sowing=sowing$DAY)
+  loc.dvs.opt = clisagri(meteo = meteo, types = types, lat = latitude, sowing=sowing$DAY)
   
   # dates of critical phenophases
   labels = data.frame(stage=c("SOW", "EM", "TIL", "STEM", "BOOT", "ANTH", "MAT"), bbch=c(0, 11, 21, 31, 41, 69, 89))
@@ -187,7 +187,7 @@ par.fun = function(X,meteo,lat,parameters,tsums,sowing,type)
   meteo = phenology.breeder(meteo, parameters, sowing$DAY, latitude)
   meteo$DVS = DVS2BBCH(meteo$DVS, dvs.end=6)
   
-  foggia.dvs = agro.clim(meteo = meteo, types = type, lat = latitude, sowing=sowing$DAY)
+  foggia.dvs = clisagri(meteo = meteo, types = type, lat = latitude, sowing=sowing$DAY)
   foggia.dvs$flower = rep(stage(meteo,65), each=length(type))
   foggia.dvs$maturity = rep(stage(meteo,89), each=length(type))
   return(foggia.dvs) 
