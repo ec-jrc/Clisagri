@@ -26,13 +26,5 @@ meteo$DVS = DVS2BBCH(meteo$DVS, dvs.end = 6)
 ravenna.dvs = clisagri(meteo,41.5,sowing=sowing$DAY)
 
 
-##########  Figure 2 in manuscript ####### 
-#### development stage simulation using standard phenology model ######
-source("R/hazard.map.r")
-
-source("R/phenology.r")
-parameters = read.csv("data/ParametersRavenna.csv", header=TRUE, sep=",")
-
-dvs.ravenna = dvs.calc(meteo=meteo.ravenna, sowing="2002-10-30", parameters=parameters, latitude=44.42, r.tsum1=seq(600,1000,by=20), r.tsum2=seq(600, 1000, by=20), parallel=TRUE, ncores=10)
-
-
+######### reproduction of figures from manuscript Ceglar et al. (Clisagri: An R package for agro-climate services)
+######### TBD
