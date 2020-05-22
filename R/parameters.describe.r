@@ -1,4 +1,4 @@
 phenology.parameters = function()
 {
-  print(read.table(file="PARAM.DESC.csv", header = TRUE, sep=";"))
+  print(read.table(file="data/PARAM.DESC.csv", header = TRUE, sep=";"))
 }
