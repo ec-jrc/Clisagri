@@ -11,7 +11,7 @@ Author: Andrej Ceglar [aut, cre],
 	Andrea Toreti [aut],
         Matteo Zampieri [aut]		
 Maintainer: Andrej Ceglar <andrej.ceglar@ec.europa.eu> 
-Depends: R (>= 3.1.0) 
+Depends: R (>= 3.1.0), parallel, ggplot2, lubridate
 Suggests:  
 Description: R package provides a set of functions to calculate agroclimatic indicators related to hydrological balance, 
 excessive wetness and temeprature extremes that are relevant for winter wheat production. Functionality is extended by 
