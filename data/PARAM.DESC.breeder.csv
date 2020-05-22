@@ -13,7 +13,7 @@ VERNRTB_03;3;1;Effective vernalization rate (PARAMETER_YVALUE) as a function of 
 VERNRTB_04;10;1;Effective vernalization rate (PARAMETER_YVALUE) as a function of average daily temeprature (PARAMETER_XVALUE)
 VERNRTB_05;17;0;Effective vernalization rate (PARAMETER_YVALUE) as a function of average daily temeprature (PARAMETER_XVALUE)
 VERNRTB_06;20;0;Effective vernalization rate (PARAMETER_YVALUE) as a function of average daily temeprature (PARAMETER_XVALUE)
-TEFFMX;30;NA;maximum effective temperature for emergence (°C)
+TEFFMX;30;NA;maximum effective temperature for emergence (Â°C)
 TSUMEM;110;NA;temperature sum from sowing to emergence (growing degree days)
 DLC;8;NA;critical daylength (lower threshold, hr)
 DLO;15.3;NA;optimum daylength for development (hr)
