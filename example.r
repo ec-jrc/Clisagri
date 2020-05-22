@@ -1,5 +1,5 @@
 ### EXAMPLE OF USE - RAVENNA
-source("agro.clim.r")
+source("clisagri.r")
 
 #read meteo data
 meteo = read.csv("MeteoRavenna.csv", sep=",", header = TRUE)
@@ -7,7 +7,7 @@ meteo = read.csv("MeteoRavenna.csv", sep=",", header = TRUE)
 meteo$DAY = as.Date(meteo$DAY, format="%d/%m/%Y")
 
 ######### calculate all indicators for fixed period s#########
-ravenna = agro.clim(meteo, lat = 41.5, drought.coef=NULL)
+ravenna = clisagri(meteo, lat = 41.5, drought.coef=NULL)
 
 ######### calculate indicators based on development stages DVS #########
 source("phenology.r")
@@ -23,7 +23,7 @@ source("phenology.breeder.r")
 parameters = read.csv("ParametersRavenna.breeder.csv", header=TRUE, sep=",")
 meteo = phenology.breeder(meteo, parameters, sowing$DAY, 41.5)
 meteo$DVS = DVS2BBCH(meteo$DVS, dvs.end = 6)
-ravenna.dvs = agro.clim(meteo,41.5,sowing=sowing$DAY)
+ravenna.dvs = clisagri(meteo,41.5,sowing=sowing$DAY)
 
 
 ##########  Figure 2 in manuscript ####### 
