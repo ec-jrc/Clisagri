@@ -16,7 +16,7 @@ sowing = read.csv("SowingRavenna.csv", header=TRUE, sep=",")
 sowing$DAY = as.Date(sowing$DAY, format="%d/%m/%Y")
 meteo = phenology(meteo, parameters, sowing$DAY, 41.5)
 meteo$DVS = DVS2BBCH(meteo$DVS)
-ravenna.dvs = agro.clim(meteo,41.5,sowing=sowing$DAY)
+ravenna.dvs = clisagri(meteo,41.5,sowing=sowing$DAY)
 
 ######## phenological simulation tailored for breeders #########
 source("phenology.breeder.r")
