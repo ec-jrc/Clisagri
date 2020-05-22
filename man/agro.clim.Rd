@@ -1,9 +1,9 @@
-% File src/library/base/man/agro.clim.Rd
-\name{agro.clim}
-\alias{agro.clim}
+% File src/library/base/man/clisagri.Rd
+\name{clisagri}
+\alias{clisagri}
 \title{Calculate a set of agro-climatic indicators quantifying (un)favourable climatic conditions during sensitive stages of durum wheat growth}
 \description{
-  Function \code{agro.clim} provides a set of agro-climatic indicators characterizing weather conditions during sensitive stages of durum wheat growth. Three groups of indicators are distinguished: hydrological balance, excessive wetness and temperature indicators (heat stress and cold shocks). The timing of sensitive phases can be determined based on static dates or dynamic dates based on phenological development stage. Phenological stages can be calculated using \code{phenology}, for generic wheat variety or user specified variety (see \code{phenology} and Ceglar et al. (2019) for more details).\n
+  Function \code{clisagri} provides a set of agro-climatic indicators characterizing weather conditions during sensitive stages of durum wheat growth. Three groups of indicators are distinguished: hydrological balance, excessive wetness and temperature indicators (heat stress and cold shocks). The timing of sensitive phases can be determined based on static dates or dynamic dates based on phenological development stage. Phenological stages can be calculated using \code{phenology}, for generic wheat variety or user specified variety (see \code{phenology} and Ceglar et al. (2019) for more details).\n
   Input meteorological data is provided in \code{meteo} data frame, where the date (DAY, YYYY-MM-DD), maximum daily temperature (TEMPERATURE_MAX, deg. C), minimum daily temperature (TEMPERATURE_MIN, deg. C), average daily temperature (TEMPERATURE_AVG, deg. C), daily precipitation (PRECIPITATION, mm) and optionaly crop development stage (DVS, unitless) are provided. 
   Static timing of sensitive development stages is pre-defined based on average inter-annual timing of occurrence, and is generally limited to specific months of pre-sowing and growing period of winter wheat. Current version has a set of default values for specified months. Dynamic phenological timing can be provided either by user or calculated using \code{phenology}. In the first case, user needs to add column DVS in \code{meteo} data frame, corresponding to development BBCH development stage of wheat for each day of the growing season. In the latter case, user needs to specify a minimum set of variety specific parameters (see \code{phenology} for more details). \n
   Indicators for hydrological balance are based on calculated Standardized precipitation evapotranspiration index (SPEI). These are calculated for static periods, if no DVS is provided, and belong to types 1-6: 1 - hydrological balance during pre-sowing period (September and October), 2 - hydrological around sowing and emergence (October and November), 3 - hydrological balance during the tillering period (December-March), 4 - hydrological balance between stem elongation and booting period (April-May), 5 - hydrological balance between heading and physiological maturity (May-June), and 6 - hydrological balance between sowing and physiological maturity (November-June). In case DVS is provided, the same hydrological balance indicators are calculated during specified developent stages: 2 - between BBCH=0 and BBCH=9, 3 - between BBCH=20 and BBCH=29, 4 - between BBCH=30 and BBCH=49, 5 - between BBCH=50 and BBCH=89, and 6 - between BBCH=0 and BBCH=89. \n
@@ -12,7 +12,7 @@
   Heat stress indicators belong to types 15 and 16: 15 - number of hot days with maximum daily temperature above 28 deg. C between end of stem elongation and end of flowering (March - May), 16 - number of hot days with maximum daily temperature above 28 deg. C during grain filling period (May - June). If DVS is provided, these indicators are calculated for the following periods: 15 - between BBCH=39 and BBCH=69, 16 - between BBCH=69 and BBCH=89. 
 }
 \usage{
-  agro.clim(meteo, lat, types, sowing)
+  clisagri(meteo, lat, types, sowing)
 }
 \arguments{
   \item{meteo}{a data frame containing the following columns: DAY (YYYY-MM-DD), TEMPERATURE_MAX, TEMPERATURE_MIN, TEMPERATURE_AVG, PRECIPITATINO, DVS (optionaly)}
@@ -32,7 +32,7 @@ meteo = read.csv("MeteoFoggia.csv", sep=",", header = TRUE)
 meteo$DAY = as.Date(meteo$DAY, format="%d/%m/%Y")
 
 ######### calculate all indicators for fixed period s#########
-foggia = agro.clim(meteo, lat = 41.5, drought.coef=NULL)
+foggia = clisagri(meteo, lat = 41.5, drought.coef=NULL)
 
 ######### calculate indicators based on development stages DVS #########
 parameters = read.csv("ParametersFoggia.csv", header=TRUE, sep=",")
@@ -41,7 +41,7 @@ sowing$DAY = as.Date(sowing$DAY, format="%d/%m/%Y")
 
 meteo = phenology(meteo, parameters, sowing$DAY, 41.5)
 meteo$DVS = DVS2BBCH(meteo$DVS)
-foggia.dvs = agro.clim(meteo,41.5,sowing=sowing$DAY)
+foggia.dvs = clisagri(meteo,41.5,sowing=sowing$DAY)
 
 }
 
