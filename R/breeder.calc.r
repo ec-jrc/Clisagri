@@ -48,6 +48,7 @@ breeder.calc = function(x, meteo, sowing, parameters, types, latitude, year=NA, 
 
 breeder.plot = function(data, year, types, parameters, x, sowing, latitude)
 {
+  require(ggplot2)
   # periods of different indicators
   period=matrix(data=c(NA,0,20,30,50,0,NA,20,20,51,51,51,69,41,39,69, NA,9,29,49,89,89,NA, 29,29,89,89,69,89,69,69,89), ncol=2)
   
