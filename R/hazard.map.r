@@ -125,7 +125,7 @@ par.fun = function(X,meteo,lat,parameters,combin,sowing,type=1)
   meteo = phenology(meteo, parameters, sowing$DAY, latitude)
 
   meteo$DVS = DVS2BBCH(meteo$DVS, dvs.end = 2)
-  foggia.dvs = agro.clim(meteo = meteo, types = type, lat = latitude, sowing=sowing$DAY)
+  foggia.dvs = clisagri(meteo = meteo, types = type, lat = latitude, sowing=sowing$DAY)
   foggia.dvs$flower = stage(meteo,65)
   foggia.dvs$maturity = stage(meteo,89)
   return(foggia.dvs) 
