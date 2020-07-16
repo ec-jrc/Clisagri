@@ -2,7 +2,7 @@ Clisagri is based on a set of dynamic agro-climatic indicators that bring key in
 
 Furthermore, Clisagri is designed to test a complete range of possible crop varieties, and an optimization algorithm based on genetic algorithm has been implemented to select the variety that is 'the most fit' for given climatic conditions. 
 
-This package was supported and has received funding from the European Union's Horizon 2020 Research and Innovation programme under Grant agreement No. 776467 (MedGOLD). 
+This package was supported and has received funding from the European Union's Horizon 2020 Research and Innovation programme under Grant agreement No. 776467 (MED-GOLD). 
 
 Ceglar, A., Toreti, A., Zampieri, M., Manstretta, V., Betatti, T., Bratu, M.: Clisagri: An R package for agro-climate services. Under review
 
