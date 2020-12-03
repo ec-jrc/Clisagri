@@ -4,5 +4,5 @@ Furthermore, Clisagri is designed to test a complete range of possible crop vari
 
 This package was supported and has received funding from the European Union's Horizon 2020 Research and Innovation programme under Grant agreement No. 776467 (MED-GOLD). 
 
-Ceglar, A., Toreti, A., Zampieri, M., Manstretta, V., Betatti, T., Bratu, M.: Clisagri: An R package for agro-climate services. Under review
+Ceglar, A., Toreti, A., Zampieri, M., Manstretta, V., Betatti, T., Bratu, M.: Clisagri: An R package for agro-climate services. Climate Services, 20, 100197
 
