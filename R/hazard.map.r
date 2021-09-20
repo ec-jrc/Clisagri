@@ -118,7 +118,7 @@ dvs.calc = function(meteo, sowing, parameters, latitude, r.tsum1=seq(300,700,by=
   return(combin.res)
 }
 
-par.fun = function(X,meteo,lat,parameters,combin,sowing,type=1)
+par.fun = function(X,meteo,latitude,parameters,combin,sowing,type=1)
 {
   parameters$PARAMETER_XVALUE[parameters$PARAMETER_CODE=="TSUM1"] = combin[X,1]
   parameters$PARAMETER_XVALUE[parameters$PARAMETER_CODE=="TSUM2"] = combin[X,2]
@@ -132,7 +132,7 @@ par.fun = function(X,meteo,lat,parameters,combin,sowing,type=1)
 
 }
 
-par.fun.dvs = function(X,meteo,lat,parameters,combin,sowing)
+par.fun.dvs = function(X,meteo,latitude,parameters,combin,sowing)
 {
   parameters$PARAMETER_XVALUE[parameters$PARAMETER_CODE=="TSUM1"] = combin[X,1]
   parameters$PARAMETER_XVALUE[parameters$PARAMETER_CODE=="TSUM2"] = combin[X,2]
