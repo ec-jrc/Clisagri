@@ -5,4 +5,5 @@ Furthermore, Clisagri is designed to test a complete range of possible crop vari
 This package was supported and has received funding from the European Union's Horizon 2020 Research and Innovation programme under Grant agreement No. 776467 (MED-GOLD). 
 
 Ceglar, A., Toreti, A., Zampieri, M., Manstretta, V., Betatti, T., Bratu, M.: Clisagri: An R package for agro-climate services. Climate Services, 20, 100197
-
+Ceglar, A., et al., 2019. Improving WOFOST model to simulate winter wheat phenology in Europe: Evaluation and effects on yield. Agricultural Systems, 168, 168-180
+Ceglar, A., Toreti, A., 2021. Seasonal climate forecast can inform the European agricultural sector well in advance of harvesting. npj Climate and Atmospheric Science 4, 42
