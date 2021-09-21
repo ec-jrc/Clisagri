@@ -17,25 +17,24 @@ TEFFMX;30;NA;maximum effective temperature for emergence (°C)
 TSUMEM;110;NA;temperature sum from sowing to emergence (growing degree days)
 DLC;8;NA;critical daylength (lower threshold, hr)
 DLO;15.3;NA;optimum daylength for development (hr)
-TSUM_0;0;167;NA;temperature sum from sowing to emergence (growing degree days)
-TSUM_1;1;132;NA;temperature sum from emergence to tillering (growing degree days)
-TSUM_2;2;156;NA;temperature sum from tillering to stem elongation (growing degree days)
-TSUM_3;3;240;NA;temperature sum from stem elongation to booting (growing degree days)
-TSUM_4;4;117;NA;temperature sum from booting to flowering (growing degree days)
-TSUM_5;5;500;NA;temperature sum from flowering to maturity (growing degree days)
-TBASE_0;0;2;NA;temperature sum from sowing to emergence (growing degree days)
-TBASE_1;1;-2;NA;temperature sum from emergence to tillering (growing degree days)
-TBASE_2;2;-2;NA;temperature sum from tillering to stem elongation (growing degree days)
-TBASE_3;3;0;NA;temperature sum from stem elongation to booting (growing degree days)
-TBASE_4;4;0;NA;temperature sum from booting to flowering (growing degree days)
-TBASE_5;5;9;NA;temperature sum from flowering to maturity (growing degree days)
+TSUM_0;0;167;temperature sum from sowing to emergence (growing degree days)
+TSUM_1;1;132;temperature sum from emergence to tillering (growing degree days)
+TSUM_2;2;156;temperature sum from tillering to stem elongation (growing degree days)
+TSUM_3;3;240;temperature sum from stem elongation to booting (growing degree days)
+TSUM_4;4;117;temperature sum from booting to flowering (growing degree days)
+TSUM_5;5;500;temperature sum from flowering to maturity (growing degree days)
+TBASE_0;0;2;temperature sum from sowing to emergence (growing degree days)
+TBASE_1;1;-2;temperature sum from emergence to tillering (growing degree days)
+TBASE_2;2;-2;temperature sum from tillering to stem elongation (growing degree days)
+TBASE_3;3;0;temperature sum from stem elongation to booting (growing degree days)
+TBASE_4;4;0;temperature sum from booting to flowering (growing degree days)
+TBASE_5;5;9;temperature sum from flowering to maturity (growing degree days)
 VERNBASE;7;NA;base accumulated vernalized days (generally one fifth of VERNSAT)
 VERNSAT;37;NA;saturated vernalization requirements
-DVS_0,0,0
-DVS_1,1,1
-DVS_2,2,1
-DVS_3,3,1
-DVS_4,4,1
-DVS_5,5,2
-DVS_6,6,2
-
+DVS_0;0;0;development stage at sowing
+DVS_1;1;1;development stage at emergence
+DVS_2;2;1;development stage at tillering
+DVS_3;3;1;development stage at stem elongation
+DVS_4;4;1;development stage at booting
+DVS_5;5;2;development stage at flowering
+DVS_6;6;2;development stage at maturity
